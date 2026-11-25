@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #0b0707;
+}
+
+nav {
+    background-color: #39265c;
+    color: rgb(223, 175, 175);
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.page {
+    padding: 25px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+button {
+    background-color: #39265c;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #554078;
+}
+
+
+/* Matches Page */
+
+.matches-header {
+    background-color: #4639f9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.matches-header h1 {
+    color: white;
+}
+
+.matches-header p {
+    color: white;
+}
+
+.matches-header + section {
+    margin-top: 20px;
+}
+
+.card h2, .card h3 {
+    color: #222;
+}
+
+.card li {
+    margin: 10px 0;
+}
+
+.card select {
+    margin-right: 10px;
+}
+
+.card button {
+    margin: 5px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8e7ff;
+    color: #222;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.page h1,
+.page h2,
+.page p {
+    color: #222;
+}
+
+
+/* IPL Matches Page */
+
+.matches-page {
+    background-color: #21162F;
+    min-height: 100vh;
+    padding: 25px;
+    color: white;
+}
+
+.matches-page h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Two-column grid */
+
+.matches-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Match boxes */
+
+.match-card {
+    background-color: #E8E1EF;
+    color: #39265C;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.match-card h2 {
+    color: #39265C;
+}
+
+.match-card p {
+    color: #39265C;
+}
+
+/* Book button */
+
+.match-card button {
+    background-color: #39265C;
+    color: white;
+}
+
+.match-card button:hover {
+    background-color: #624681;
+}
+
+/* Mobile view */
+
+@media (max-width: 600px) {
+    .matches-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Home Page Only */
+
+.home-page {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 24px;
+    color: #f5f5f5;
+}
+
+.home-hero {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 32px;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    background-color: #0a0a0b;
+    color: #f5f5f5;
+    padding: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.home-hero-content {
+    min-width: 0;
+}
+
+.home-hero h1 {
+    color: #fff;
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    line-height: 1.08;
+    margin: 12px 0 18px;
+}
+
+.home-hero p {
+    color: #d0d0d0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.home-tag {
+    color: #bba5ff !important;
+    font-size: 0.8rem !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.home-hero-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    min-width: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.home-link,
+.home-text-link {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background-color: #bba5ff;
+    color: #17121f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home-link:hover,
+.home-text-link:hover {
+    background-color: #d1c4ff;
+}
+
+.home-featured {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.home-featured h2 {
+    color: #222;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.home-featured p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.home-featured-card {
+    box-sizing: border-box;
+    min-width: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.home-featured-card h3 {
+    color: #222;
+}
+
+.home-featured-card p {
+    color: #444;
+}
+
+
+/* Home Page Mobile Layout */
+
+@media (max-width: 700px) {
+    .home-page {
+        padding: 16px;
+    }
+
+    .home-hero,
+    .home-featured {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .home-hero {
+        padding: 22px;
+        gap: 20px;
+    }
+
+    .home-hero-image {
+        height: 220px;
+    }
+}
+/* Make booking validation errors easier to see */
+.page .error {
+    color: #d00000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 6px 0;
+}
